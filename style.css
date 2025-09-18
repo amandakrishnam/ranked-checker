@@ -1,0 +1,96 @@
+/* Importando uma fonte do Google Fonts para se parecer com a do Valorant */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Paleta de Cores Inspirada no Valorant */
+:root {
+    --valorant-preto: #0F1923;
+    --valorant-vermelho: #FD4556;
+    --valorant-creme: #ECE8E1;
+    --valorant-cinza: #768079;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Anton', sans-serif;
+    background-color: var(--valorant-preto);
+    color: var(--valorant-creme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.05); /* Um fundo levemente transparente */
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--valorant-vermelho);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(253, 69, 86, 0.4);
+}
+
+h1 {
+    color: var(--valorant-vermelho);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--valorant-cinza);
+}
+
+/* Estilo dos grupos de input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--valorant-cinza);
+    border-radius: 5px;
+    background-color: var(--valorant-preto);
+    color: var(--valorant-creme);
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--valorant-vermelho);
+    color: var(--valorant-creme);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d83a49; /* Um vermelho um pouco mais escuro ao passar o mouse */
+}
+
+/* Estilo da área de resultado */
+#resultado {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--valorant-creme);
+    line-height: 1.5;
+}
